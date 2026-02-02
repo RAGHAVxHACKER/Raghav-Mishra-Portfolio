@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raghav Mishra - Portfolio</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+<!-- ================= NAVBAR ================= -->
+<nav>
+    <div class="nav-container">
+        <h1>Raghav Mishra</h1>
+
+        <div class="menu-toggle" id="menu-toggle">
+            <i class="fas fa-bars"></i>
+        </div>
+
+        <ul id="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#personal">Personal</a></li>
+            <li><a href="#swot">Strengths</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+</nav>
+
+<!-- ================= HERO / ABOUT ================= -->
+<section id="about" class="hero reveal">
+    <div class="hero-container">
+
+        <img src="raghav-portfolio.jpg" alt="Raghav Mishra" class="profile-img">
+
+        <h2>Hi, I'm Raghav Mishra</h2>
+        <h3 class="static-role">Cybersecurity Student</h3>
+
+        <p>
+            B.Tech Computer Science Engineering student specializing in
+            <strong>Cybersecurity</strong> at Graphic Era Hill University, Dehradun.
+            Passionate about system security, ethical hacking, and modern technology.
+            I'm not just a tech enthusiast but also someone who enjoys life beyond the screen.
+        </p>
+
+        <a href="#skills" class="btn">Explore My Skills</a>
+
+    </div>
+</section>
+
+<!-- ================= SKILLS ================= -->
+<section id="skills" class="reveal">
+    <div class="container">
+        <h2>Technical Skills</h2>
+        <p class="section-subtitle">My technical toolkit and expertise</p>
+
+        <div class="skills-grid">
+            <div class="skill">
+                <i class="fas fa-code"></i>
+                <h3>Programming</h3>
+                <p>Python, Java, C++, C</p>
+            </div>
+
+            <div class="skill">
+                <i class="fas fa-shield-alt"></i>
+                <h3>Cybersecurity</h3>
+                <p>Ethical Hacking, Network Security, Cryptography</p>
+            </div>
+
+            <div class="skill">
+                <i class="fas fa-database"></i>
+                <h3>Databases</h3>
+                <p>SQL, MongoDB</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ================= PROJECTS ================= -->
+<section id="projects" class="reveal">
+    <div class="container">
+        <h2>Projects</h2>
+        <p class="section-subtitle">My technical implementations and creations</p>
+
+        <!-- Interactive Projects Grid -->
+        <div class="projects-grid">
+            <!-- Car Rental Project -->
+            <div class="project" onclick="showProjectDetails('car-rental')">
+                <div class="project-icon">🚗</div>
+                <h3>Car Rental Management System</h3>
+                <p class="project-tagline">Web-based system for secure vehicle rentals</p>
+                <div class="tech-tags">
+                    <span class="tech-tag">HTML</span>
+                    <span class="tech-tag">CSS</span>
+                    <span class="tech-tag">JavaScript</span>
+                    <span class="tech-tag">Java</span>
+                    <span class="tech-tag">MySQL</span>
+                </div>
+                <div class="click-hint">Click/Tap to view details →</div>
+            </div>
+
+            <!-- File Detector Project -->
+            <div class="project" onclick="showProjectDetails('file-detector')">
+                <div class="project-icon">🔍</div>
+                <h3>File Detector</h3>
+                <p class="project-tagline">Cybersecurity tool for suspicious file detection</p>
+                <div class="tech-tags">
+                    <span class="tech-tag">Java</span>
+                    <span class="tech-tag">Python</span>
+                    <span class="tech-tag">Security</span>
+                </div>
+                <div class="click-hint">Click/Tap to view details →</div>
+            </div>
+        </div>
+
+        <!-- Project Details Modal (Hidden by default) -->
+        <div id="project-modal" class="project-modal">
+            <div class="modal-content">
+                <button class="close-modal" onclick="closeProjectDetails()">×</button>
+                <div id="modal-content">
+                    <!-- Content will be loaded here dynamically -->
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ================= EDUCATION ================= -->
+<section id="education" class="reveal">
+    <div class="container">
+        <h2>Education</h2>
+        <p class="section-subtitle">My academic journey and qualifications</p>
+        <div class="education-info">
+            <p><strong>B.Tech CSE (Cybersecurity)</strong></p>
+            <p>Graphic Era Hill University, Dehradun</p>
+            <p>2024 – 2028</p>
+        </div>
+    </div>
+</section>
+
+<!-- ================= PERSONAL SECTION (MOVED HERE) ================= -->
+<section id="personal" class="reveal">
+    <div class="container">
+        <h2>Beyond Code</h2>
+        <p class="section-subtitle">What I enjoy when I'm not coding</p>
+
+        <div class="personal-grid">
+            <div class="personal-card">
+                <div class="personal-icon">🏏</div>
+                <h3>Cricket</h3>
+                <p>Love playing and watching cricket. Enjoy the strategy and teamwork involved in the game.</p>
+            </div>
+
+            <div class="personal-card">
+                <div class="personal-icon">🏍️</div>
+                <h3>Bike Riding</h3>
+                <p>Enjoy exploring new places on my bike. It's my way of clearing my mind and finding inspiration.</p>
+            </div>
+
+            <div class="personal-card">
+                <div class="personal-icon">🚗</div>
+                <h3>Car Driving</h3>
+                <p>Love going on long drives, especially to scenic locations. It's therapeutic and refreshing.</p>
+            </div>
+
+            <div class="personal-card">
+                <div class="personal-icon">🎮</div>
+                <h3>Gaming</h3>
+                <p>Enjoy strategic games that challenge the mind and improve problem-solving skills.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ================= STRENGTHS & WEAKNESSES ================= -->
+<section id="swot" class="reveal">
+    <div class="container">
+        <h2>My Strengths & Growth Areas</h2>
+        <p class="section-subtitle">Understanding myself better to grow continuously</p>
+
+        <div class="swot-container">
+            <div class="strengths-box">
+                <h3><i class="fas fa-trophy"></i> My Strengths</h3>
+                <ul class="strengths-list">
+                    <li><i class="fas fa-bolt"></i> Quick Learner - Grasp new concepts rapidly</li>
+                    <li><i class="fas fa-flag"></i> Leadership Skills - Natural team leader</li>
+                    <li><i class="fas fa-lightbulb"></i> Problem Solver - Analytical thinking</li>
+                    <li><i class="fas fa-shield-alt"></i> Security Minded - Always think about safety first</li>
+                    <li><i class="fas fa-users"></i> Team Player - Work well in groups</li>
+                </ul>
+            </div>
+
+            <div class="weaknesses-box">
+                <h3><i class="fas fa-chart-line"></i> Areas for Improvement</h3>
+                <ul class="weaknesses-list">
+                    <li><i class="fas fa-hourglass-half"></i> Can be slow in execution sometimes</li>
+                    <li><i class="fas fa-perfection"></i> Perfectionist tendency</li>
+                    <li><i class="fas fa-clock"></i> Time management could be better</li>
+                    <li><i class="fas fa-pause"></i> Sometimes overthink decisions</li>
+                    <li><i class="fas fa-balance-scale"></i> Balancing multiple tasks</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ================= CONTACT ================= -->
+<section id="contact" class="reveal">
+    <div class="container">
+        <h2>Contact</h2>
+        <p class="section-subtitle">Let's connect and build something amazing</p>
+        <div class="contact-info">
+            <p><i class="fas fa-envelope"></i> Email: <a href="mailto:misraraghav33@gmail.com">misraraghav33@gmail.com</a></p>
+            <p><i class="fab fa-github"></i> <a href="https://github.com/RAGHAVxHACKER" target="_blank">GitHub</a></p>
+            <p><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com" target="_blank">LinkedIn</a></p>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2026 Raghav Mishra | Cybersecurity Student | Tech Enthusiast</p>
+</footer>
+
+<!-- Lightbox container -->
+<div id="lightbox-container"></div>
+
+<script src="script.js"></script>
+</body>
+</html>

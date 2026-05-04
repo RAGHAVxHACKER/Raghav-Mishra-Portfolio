@@ -1,20 +1,25 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <title>Raghav Mishra | Cybersecurity Student Portfolio</title>
+
+    <title>Raghav Mishra | Portfolio</title>
 
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
+
 <body>
 
 <!-- NAVBAR -->
 <nav>
     <div class="nav-container">
         <h1>Raghav Mishra</h1>
+
+        <div class="menu-toggle" id="menu-toggle">
+            <i class="fas fa-bars"></i>
+        </div>
 
         <ul id="nav-links">
             <li><a href="#about">About</a></li>
@@ -23,14 +28,13 @@
             <li><a href="#education">Education</a></li>
             <li><a href="#personal">Personal</a></li>
             <li><a href="#swot">Strengths</a></li>
-            <li><a href="#cover-letter">Cover Letter</a></li>
-            <li><a href="#profiling">Profiling Sheets</a></li>
+            <li><a href="#profiling">Docs</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
     </div>
 </nav>
 
-<!-- ABOUT -->
+<!-- HERO -->
 <section id="about" class="hero reveal">
     <div class="hero-container">
 
@@ -40,9 +44,8 @@
         <h3 class="static-role">Cybersecurity Student</h3>
 
         <p>
-            B.Tech Computer Science Engineering student specializing in
-            <strong>Cybersecurity</strong> at Graphic Era Hill University, Dehradun.
-            Passionate about system security, ethical hacking, and modern technology.
+            B.Tech Computer Science Engineering student specializing in Cybersecurity
+            at Graphic Era Hill University, Dehradun.
         </p>
 
         <a href="#skills" class="btn">Explore My Skills</a>
@@ -57,40 +60,13 @@
 
         <div class="skills-grid">
             <div class="skill">
-                <i class="fas fa-code"></i>
                 <h3>Programming</h3>
                 <p>Python, Java, C++, C</p>
             </div>
 
             <div class="skill">
-                <i class="fas fa-shield-alt"></i>
                 <h3>Cybersecurity</h3>
-                <p>Ethical Hacking, Network Security, Cryptography</p>
-            </div>
-
-            <div class="skill">
-                <i class="fas fa-database"></i>
-                <h3>Databases</h3>
-                <p>SQL, MongoDB</p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- PROJECTS -->
-<section id="projects" class="reveal">
-    <div class="container">
-        <h2>Projects</h2>
-
-        <div class="projects-grid">
-            <div class="project">
-                <h3>Car Rental Management System</h3>
-                <p>Web-based system for secure rentals</p>
-            </div>
-
-            <div class="project">
-                <h3>File Detector</h3>
-                <p>Detects suspicious files</p>
+                <p>Ethical Hacking, Network Security</p>
             </div>
         </div>
     </div>
@@ -100,9 +76,8 @@
 <section id="education" class="reveal">
     <div class="container">
         <h2>Education</h2>
-        <p><strong>B.Tech CSE (Cybersecurity)</strong></p>
-        <p>Graphic Era Hill University, Dehradun</p>
-        <p>2024 – 2028</p>
+        <p>B.Tech CSE (Cybersecurity)</p>
+        <p>Graphic Era Hill University</p>
     </div>
 </section>
 
@@ -110,81 +85,77 @@
 <section id="personal" class="reveal">
     <div class="container">
         <h2>Beyond Code</h2>
-        <p>Cricket, Bike Riding, Driving, Gaming</p>
+        <p>Cricket • Bike Riding • Gaming</p>
     </div>
 </section>
 
 <!-- SWOT -->
 <section id="swot" class="reveal">
     <div class="container">
-        <h2>Strengths & Weaknesses</h2>
-        <p>Quick learner, leadership skills, problem solving, etc.</p>
+        <h2>Strengths & Weakness</h2>
+        <p>Quick Learner • Problem Solver • Leadership</p>
     </div>
 </section>
 
 <!-- COVER LETTER -->
-<section id="cover-letter" class="reveal">
-    <div class="container">
-        <h2>My Cover Letter</h2>
+<section class="reveal">
+    <div class="container cover-letter">
+        <h2>Cover Letter</h2>
+        <img src="cover-letter.jpeg" class="cover-img">
+    </div>
+</section>
 
-        <div class="cover-letter">
-            <img src="cover-letter.jpeg" class="cover-img">
-            <br><br>
-            <a href="cover-letter.jpeg" download class="btn">Download Cover Letter</a>
+<!-- PROFILING SHEETS -->
+<section id="profiling" class="reveal">
+    <div class="container">
+        <h2>Profiling Sheets</h2>
+
+        <div class="profiling-grid">
+
+            <div class="profile-card">
+                <span class="sheet-label">P1</span>
+                <img src="p1.jpeg" class="profile-sheet">
+            </div>
+
+            <div class="profile-card">
+                <span class="sheet-label">P2</span>
+                <img src="p2.jpeg" class="profile-sheet">
+            </div>
+
+            <div class="profile-card">
+                <span class="sheet-label">P3</span>
+                <img src="p3.jpeg" class="profile-sheet">
+            </div>
+
+            <div class="profile-card">
+                <span class="sheet-label">P4</span>
+                <img src="p4.jpeg" class="profile-sheet">
+            </div>
+
+            <div class="profile-card">
+                <span class="sheet-label">P5</span>
+                <img src="p5.jpeg" class="profile-sheet">
+            </div>
+
+            <div class="profile-card">
+                <span class="sheet-label">P6</span>
+                <img src="p6.jpeg" class="profile-sheet">
+            </div>
+
+            <div class="profile-card">
+                <span class="sheet-label">P7</span>
+                <img src="p7.jpeg" class="profile-sheet">
+            </div>
+
         </div>
     </div>
 </section>
 
-<section id="profiling">
-  <div class="container">
-    <h2>Profiling Sheets</h2>
-
-    <div class="profiling-grid">
-
-      <div class="profile-card">
-        <span class="sheet-label">P1</span>
-        <img src="p1.jpeg" class="profile-sheet">
-      </div>
-
-      <div class="profile-card">
-        <span class="sheet-label">P2</span>
-        <img src="p2.jpeg" class="profile-sheet">
-      </div>
-
-      <div class="profile-card">
-        <span class="sheet-label">P3</span>
-        <img src="p3.jpeg" class="profile-sheet">
-      </div>
-
-      <div class="profile-card">
-        <span class="sheet-label">P4</span>
-        <img src="p4.jpeg" class="profile-sheet">
-      </div>
-
-      <div class="profile-card">
-        <span class="sheet-label">P5</span>
-        <img src="p5.jpeg" class="profile-sheet">
-      </div>
-
-      <div class="profile-card">
-        <span class="sheet-label">P6</span>
-        <img src="p6.jpeg" class="profile-sheet">
-      </div>
-
-      <div class="profile-card">
-        <span class="sheet-label">P7</span>
-        <img src="p7.jpeg" class="profile-sheet">
-      </div>
-
-    </div>
-  </div>
-</section>
 <!-- CONTACT -->
 <section id="contact" class="reveal">
     <div class="container">
         <h2>Contact</h2>
-        <p>Email: <a href="mailto:misraraghav33@gmail.com">misraraghav33@gmail.com</a></p>
-        <p><a href="https://github.com/RAGHAVxHACKER" target="_blank">GitHub</a></p>
+        <p>Email: misraraghav33@gmail.com</p>
     </div>
 </section>
 
@@ -192,6 +163,8 @@
     <p>© 2026 Raghav Mishra</p>
 </footer>
 
+<!-- IMPORTANT -->
 <script src="script.js"></script>
+
 </body>
 </html>

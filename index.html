@@ -4,98 +4,130 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
+    <!-- SEO Meta Tags -->
     <title>Raghav Mishra | Cybersecurity Student Portfolio</title>
-
+    <meta name="description" content="Raghav Mishra - Cybersecurity Student Portfolio. B.Tech CSE Cybersecurity student passionate about ethical hacking, network security, and web development.">
+    
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
-
 <body>
 
 <!-- NAVBAR -->
 <nav>
     <div class="nav-container">
         <h1>Raghav Mishra</h1>
-        <ul>
+
+        <ul id="nav-links">
             <li><a href="#about">About</a></li>
             <li><a href="#skills">Skills</a></li>
             <li><a href="#projects">Projects</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#personal">Personal</a></li>
+            <li><a href="#swot">Strengths</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
     </div>
 </nav>
 
 <!-- ABOUT -->
-<section id="about" class="hero">
+<section id="about" class="hero reveal">
     <div class="hero-container">
 
         <img src="raghav-portfolio.jpg" class="profile-img">
 
         <h2>Hi, I'm Raghav Mishra</h2>
-        <h3>Cybersecurity Student</h3>
+        <h3 class="static-role">Cybersecurity Student</h3>
 
         <p>
             B.Tech Computer Science Engineering student specializing in
             <strong>Cybersecurity</strong> at Graphic Era Hill University, Dehradun.
             Passionate about system security, ethical hacking, and modern technology.
+            I'm not just a tech enthusiast but also someone who enjoys life beyond the screen.
         </p>
 
         <!-- ✅ COVER LETTER ADDED -->
         <div class="cover-letter">
             <h3>My Cover Letter</h3>
-            <img src="cover-letter.jpg" alt="Cover Letter" class="cover-img">
-            
+
+            <img src="cover-letter.jpeg" 
+                 alt="Raghav Mishra Cover Letter" 
+                 class="cover-img">
+
             <br><br>
-            <a href="cover-letter.jpg" download class="btn">Download Cover Letter</a>
+
+            <a href="cover-letter.jpeg" download class="btn">
+                Download Cover Letter
+            </a>
         </div>
+
+        <a href="#skills" class="btn">Explore My Skills</a>
 
     </div>
 </section>
 
 <!-- SKILLS -->
-<section id="skills">
+<section id="skills" class="reveal">
     <div class="container">
-        <h2>Skills</h2>
+        <h2>Technical Skills</h2>
 
         <div class="skills-grid">
             <div class="skill">
                 <i class="fas fa-code"></i>
                 <h3>Programming</h3>
-                <p>Python, Java, C++</p>
+                <p>Python, Java, C++, C</p>
             </div>
 
             <div class="skill">
                 <i class="fas fa-shield-alt"></i>
                 <h3>Cybersecurity</h3>
-                <p>Ethical Hacking, Network Security</p>
+                <p>Ethical Hacking, Network Security, Cryptography</p>
+            </div>
+
+            <div class="skill">
+                <i class="fas fa-database"></i>
+                <h3>Databases</h3>
+                <p>SQL, MongoDB</p>
             </div>
         </div>
     </div>
 </section>
 
 <!-- PROJECTS -->
-<section id="projects">
+<section id="projects" class="reveal">
     <div class="container">
         <h2>Projects</h2>
 
-        <div class="project">
-            <h3>Car Rental System</h3>
-            <p>Secure web-based rental system</p>
-        </div>
+        <div class="projects-grid">
+            <div class="project">
+                <h3>Car Rental Management System</h3>
+                <p>Web-based system for secure rentals</p>
+            </div>
 
-        <div class="project">
-            <h3>File Detector</h3>
-            <p>Detects suspicious files</p>
+            <div class="project">
+                <h3>File Detector</h3>
+                <p>Detects suspicious files</p>
+            </div>
         </div>
     </div>
 </section>
 
+<!-- EDUCATION -->
+<section id="education" class="reveal">
+    <div class="container">
+        <h2>Education</h2>
+        <p><strong>B.Tech CSE (Cybersecurity)</strong></p>
+        <p>Graphic Era Hill University, Dehradun</p>
+        <p>2024 – 2028</p>
+    </div>
+</section>
+
 <!-- CONTACT -->
-<section id="contact">
+<section id="contact" class="reveal">
     <div class="container">
         <h2>Contact</h2>
-        <p>Email: misraraghav33@gmail.com</p>
-        <p>GitHub: github.com/RAGHAVxHACKER</p>
+        <p>Email: <a href="mailto:misraraghav33@gmail.com">misraraghav33@gmail.com</a></p>
+        <p><a href="https://github.com/RAGHAVxHACKER" target="_blank">GitHub</a></p>
     </div>
 </section>
 
@@ -103,5 +135,6 @@
     <p>© 2026 Raghav Mishra</p>
 </footer>
 
+<script src="script.js"></script>
 </body>
 </html>

@@ -795,13 +795,8 @@ footer {
 }
 
 .profile-sheet {
-    width: 100%;
-    max-width: 180px;   /* 🔥 reduced size */
-    height: 220px;      /* 🔥 force smaller height */
-    object-fit: cover;  /* 🔥 crops nicely */
-    border-radius: 8px;
-    cursor: pointer;
-    transition: transform 0.3s ease;
+    max-width: 160px;
+    height: auto;
 }
 
 .profile-sheet:hover {
